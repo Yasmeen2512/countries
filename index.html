@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>countries</title>
+    <!-- Responsive for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+    <header> <!-- header -->
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-md fixed-top " style="  height: 60px;opacity: 0.8; background-color: var(--The-darkest);">
+        <div class="container-fluid ">
+          <input type="image" src="images/logo1.png" class="logo" alt="logo" >
+          <a class="navbar-brand m-3" href="#">To Where</a>
+          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">contact us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <button class="nav-link dropdown-toggle  border-2 border-dark rounded-3" href="#"
+                  id="nav-Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  countries
+                </button>
+                <ul class="dropdown-menu mt-3 " aria-labelledby="nav-Dropdown" style="background-color: var(--The-darkest);">
+                  <li><a class="dropdown-item " target="_blank" href="">egypt</a></li>
+                  <li><a class="dropdown-item " target="_blank" href="">morocco</a></li>
+                  <li><a class="dropdown-item " target="_blank" href="">Algeria</a></li>
+                  <li><a class="dropdown-item " target="_blank" href="">Saudi Arabia</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control m-3 " type="search" placeholder="Search for another city" aria-label="Search">
+            </form>
+            <form class="d-flex">
+              <button class=" navbtn btn btn-light  me-3 border-3 border-white rounded-3 "type="submit">Search</button>
+              <button class="navbtn btn btn-light  border-3 border-white rounded-3" type="button"
+                data-bs-toggle="modal" data-bs-target="#Modal">Log in</button>
+              <button class="navbtn btn btn-light  border-3 border-white rounded-3 sign" type="button"
+                data-bs-toggle="modal" data-bs-target="#Modal1">sign up</button>
+            </form> <!-- /form -->
+          </div> <!-- /navbar-collapse -->
+
+        </div>
+      </nav>
+      <!-- /navbar -->
+    </header> <!-- /header -->
+    <!-- Modal -->
+    <div class="modal fade" id="Modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header " style="background-color: var(--The-darkest)">
+            <h5 class="modal-title text-light font-weight-bolder" id="staticBackdropLabel" > welcome back</h5>
+            <button type="button" class="btn btn-close " data-bs-dismiss="modal" aria-label="Close" style="background-color: var(--light)"></button>
+          </div>
+          <div class="modal-body" style="background-color: var(--medium);">
+            <!-- form -->
+            <form>
+              <div class="m-3">
+                <label class="form-label text-dark">Email address</label>
+                <input type="email" class="form-control text-dark border-2 border-dark rounded-2"
+                  aria-describedby="emailHelp">
+              </div>
+              <div class="m-3">
+                <label class="form-label text-dark">Password</label>
+                <input type="password" class="form-control text-dark border-2 border-dark rounded-2">
+              </div>
+              <div class="m-3 form-check">
+                <div class="form-check form-switch">
+                  <input class="form-check-input bg-dark" type="checkbox" role="switch" checked>
+                  <label class="form-check-label text-dark" for="flexSwitchCheckChecked">Remmember me</label>
+                </div>
+              </div> <!-- /form check -->
+
+            </form>
+            <!-- /form -->
+            <div class="modal-footer d-flex  justify-content-between">
+              <button type="submit" class="btn text-light" style="background-color: var(--The-darkest)">Login</button>
+              <button type="button" class="btn text-light" data-bs-dismiss="modal" style="background-color: var(--The-darkest)">Close</button>
+            </div> <!-- /model-footer -->
+          </div> <!-- /model-body -->
+        </div> <!-- /modal-content -->
+      </div> <!-- /modal-dialog -->
+    </div> <!-- /modal -->
+
+    <!-- Modal1 -->
+    <div class="modal fade" id="Modal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header " style="background-color: var(--The-darkest)">
+            <h5 class="modal-title text-light font-weight-bolder" id="staticBackdropLabel" >Be one of our family</h5>
+            <button type="button" class="btn btn-close  " data-bs-dismiss="modal" aria-label="Close" style="background-color: var(--light)"></button>
+          </div>
+          <div class="modal-body" style="background-color: var(--medium);">
+            <!-- form -->
+            <form>
+              <div class="m-3">
+                <label class="form-label text-dark">Email address</label>
+                <input type="email" class="form-control text-dark border-2 border-dark rounded-2"
+                  aria-describedby="emailHelp">
+                <p class="form-text text-dark">We'll never share your email with anyone else.</p>
+              </div>
+              <div class="m-3">
+                <label class="form-label text-dark">Password</label>
+                <input type="password" class="form-control text-dark border-2 border-dark rounded-2">
+              </div>
+              <div class="m-3">
+                <label class="form-label text-dark"> confirm Password</label>
+                <input type="password" class="form-control text-dark border-2 border-dark rounded-2">
+              </div>
+              <div class="m-3 form-check">
+                <div class="form-check form-switch">
+                  <input class="form-check-input bg-dark" type="checkbox" role="switch" checked>
+                  <label class="form-check-label text-dark" for="flexSwitchCheckChecked">Remmember me</label>
+                </div>
+              </div> <!-- /form check -->
+
+            </form>
+            <!-- /form -->
+            <div class="modal-footer d-flex  justify-content-between">
+              <button type="submit" class="btn text-light" style="background-color: var(--The-darkest)">sign up</button>
+              <button type="button" class="btn text-light" data-bs-dismiss="modal" style="background-color: var(--The-darkest)">Close</button>
+            </div> <!-- /model-footer -->
+          </div> <!-- /model-body -->
+        </div> <!-- /modal-content -->
+      </div> <!-- /modal-dialog -->
+    </div> <!-- /modal -->
+    
+    </main>
+    <aside>
+      <div class="container-fluid p-0 " style="position: relative;">
+
+        <div class="d-flex flex-column justify-content-between ms-auto"
+          style="position: fixed;z-index: 90;top: 200px;right:10px;">
+          <div class="aside-icon "><a href="#"><i class="fab fa-facebook-square fa-color"></i></a></div>
+          <div class="aside-icon "><a href="#"><i class="fab fa-whatsapp-square"></i></a></div>
+          <div class="aside-icon "><a href="#"><i class="fab fa-twitter-square"></i></a></div>
+          <div class="aside-icon "><a href="#"><i class="fab fa-linkedin"></i></a></div>
+          <div class="aside-icon "><a href="#"><i class="fab fa-instagram-square"></i></a></div>
+        </div>
+    </aside>
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators ">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/cairo/img1.jpg" alt="cairo" class="d-block w-100" style="height: 550px;">
+          <div class="carousel-caption">
+            <h1>CAIRO</h1>
+            <p>let's have great time in cairo!</p>
+            <a href="#" class="btn text-white text-shadow" target="_blank" style="background-color: var(--The-darkest);">Visit Us</a>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <img src="images/morocco/img1.webp" alt="morocco" class="d-block w-100" style="height: 550px;">
+          <div class="carousel-caption">
+            <h1>morocco</h1>
+            <p>love you morocco!</p>
+            <a href="#" class="btn text-white text-shadow" target="_blank" style="background-color: var(--The-darkest)">Visit Us</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/Algeria/img1.webp" alt="Algeria" class="d-block w-100" style="height: 550px;">
+          <div class="carousel-caption">
+            <h1>Algeria</h1>
+            <p>just relax!</p>
+            <a href="#" class="btn text-white text-shadow" target="_blank" style="background-color: var(--The-darkest)">Visit Us</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/Saudi Arabia/img1.webp" alt="Saudi Arabia" class="d-block w-100" style="height: 550px;">
+          <div class="carousel-caption">
+            <h1>Saudi Arabia</h1>
+            <p>We love this city!</p>
+            <a href="#" class="btn text-white text-shadow" target="_blank" style="background-color: var(--The-darkest)">Visit Us</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- /carousel -->
+    </main>
+    <!-- basic card -->
+    <section class="cards">
+
+      <div class="card p-3  text-dark shadow-lg"
+        style="border-top-left-radius: 0; border-top-right-radius:0 ;background-color: var(--light);">
+        <div class="card-body">
+          <h2 class="card-title title" >hello dear</h2>
+          <p class="card-text">Are you planning to traveling? We offer the ultimate tour in several cites, covering Cairo,morocco. From a one day trip to a 10 day dream vacation, we will take care of all your needs. book hotels. 24/7
+            Customer Service. .</p>
+          <a href="#" class="btn  text-light  btn-lg m-auto" style="background-color: var(--The-darkest)">Learn more</a>
+        </div>
+      </div>
+      <!-- /card -->
+      <!-- collapse Accordion-->
+      <div class="mx-auto my-3 p-5 text-center text-shadow rounded-3 shadow-lg "
+        style="background-color: var(--light); color: var(--The-darkest);">
+        <h1>Popular Destinations in Cairo</h1>
+      </div>
+      <div class="accordion" id="accordioncollapse">
+        <div class="accordion-item">
+          <h2 class="accordion-header " id="head1" style="background-color: var(--medium); ">
+            <button class="accordion-button collapsed btn-outline-dark  title shadow-lg " type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+              style="font-size: 20px; color: var(--The-darkest);">
+              Pyramids
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="head1"
+            data-bs-parent="#accordioncollapse" style="background-color: var(--medium);">
+            <div class="accordion-body border-dark text-dark" >
+            The Giza Pyramids, an enduring testament to ancient ingenuity and architectural mastery, stand proudly on the outskirts
+            of Cairo, Egypt, as a defining emblem of the world's fascination with the past. Comprising the Great Pyramid of Giza,
+            alongside the pyramids of Khafre and Menkaure, these colossal structures have stood for over 4,500 years, captivating
+            the imagination with their sheer magnitude and enigmatic allure. Crafted with precision using massive limestone blocks,
+            these monuments served as the eternal resting places for pharaohs, shrouded in mystery and surrounded by myths and
+            legends. Their enduring presence continues to evoke wonder and admiration, inviting visitors to marvel at the remarkable
+            achievements of ancient Egyptian civilization while pondering the secrets that still linger within these iconic
+            structures. 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="head2" style="background-color:var(--dark);">
+            <button class="accordion-button collapsed btn-outline-dark text-dark title shadow-lg " type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Cairo Tower
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="head2"
+            data-bs-parent="#accordioncollapse" style="background-color:var(--dark)";>
+            <div class="accordion-body border-dark text-dark">
+              The Cairo Tower, an iconic landmark nestled along the banks of the Nile River in Egypt, stands as a symbol of the
+              country's rich history and modern aspirations. Rising majestically to a height of 187 meters, this slender tower offers
+              breathtaking panoramic views of the sprawling cityscape below. Constructed in the 1960s, its distinctive lotus-shaped
+              design and latticework structure have captivated locals and tourists alike. Visitors ascend its observatory decks via a
+              swift elevator ride to witness Cairo's bustling streets, the serpentine flow of the Nile, and the magnificent pyramids
+              shimmering in the distance, making the Cairo Tower an essential stop for those seeking both historical insight and
+              stunning vistas in this vibrant metropolis.
+            </div>
+          </div>
+          
+
+          <!-- /collapse -->
+          <div class="mx-auto mt-3 p-2  text-light text-center text-shadow rounded-3 shadow-lg "
+            style="background-color: var(--The-darkest);">
+            <h1 style="color: var(--light);">Translate From Arabic To English</h1>
+          </div>
+          <!-- card1 -->
+          <div class="card p-3  text-dark shadow-lg"
+            style="border-top-left-radius: 0; border-top-right-radius:0 ;background-color: var(--light); ">
+            <div class="card-body">
+              <h4 class="card-title ">ًWrite and Translate <a href="https://translate.google.com.eg/?hl=en"
+                  target="_blank" rel="noopener" ;">Press Here</a></h4>
+              <button
+                class="btn text-light border  border-2 button_translate .button_translate::before .button_translate::after shadow-lg "
+                onclick="copyToClipboard('sentence')" id="btnCopy" style="font-size: 18px; background-color: var(--The-darkest);">
+                Copy
+              </button>
+              <br>
+              <textarea id="sentence" class="form-control mx-auto mt-3" rows="5" id="comment" placeholder="translate:"
+                name="text" style="background-color: var(--medium); color: var(--The-darkest);"></textarea>
+            </div>
+          </div>
+          <!-- /card1 -->
+          <hr>
+          <div class="mx-auto mt-3 p-2  text-light text-center text-shadow rounded-3 shadow-lg "
+            style="background-color: var(--The-darkest);">
+            <h1 style="color: var(--light);">Translate From Arabic To Frensh</h1>
+          </div>
+          <!-- card2 -->
+          <div class="card p-3  text-dark shadow-lg"
+            style="border-top-left-radius: 0; border-top-right-radius:0 ;background-color: var(--light); ">
+            <div class="card-body">
+              <h4 class="card-title ">ًWrite and Translate <a
+                  href="https://translate.google.com.eg/?hl=en&sl=ar&tl=fr&op=translate" target="_blank"
+                  rel="noopener">Press Here</a></h4>
+              <button
+                class="btn text-light border  border-2 button_translate .button_translate::before .button_translate::after shadow-lg "
+                onclick="copyToClipboard('sentence')" id="btnCopy" style="font-size: 18px; background-color: var(--The-darkest);">
+                Copy
+              </button>
+              <br>
+              <textarea id="sentence" class="form-control mx-auto mt-3" rows="5" id="comment" placeholder="translate:"
+                name="text" style="background-color: var(--medium);"></textarea>
+            </div>
+          </div>
+          <!-- /card2 -->
+          <hr>
+          <div class="mx-auto mt-3 p-2  text-light text-center text-shadow rounded-3 shadow-lg "
+            style="background-color: var(--The-darkest);">
+            <h1 style="color: var(--light);">Translate From Arabic To German</h1>
+          </div>
+          <!-- card3 -->
+          <div class="card p-3  text-dark shadow-lg"
+            style="border-top-left-radius: 0; border-top-right-radius:0 ;background-color: var(--light);">
+            <div class="card-body">
+              <h4 class="card-title ">ًWrite and Translate <a
+                  href="https://translate.google.com.eg/?hl=en&sl=ar&tl=de&op=translate" target="_blank"
+                  rel="noopener">Press Here</a></h4>
+              <button class="btn text-light border  border-2 button_translate .button_translate::before .button_translate::after shadow-lg "
+                onclick="copyToClipboard('sentence')" id="btnCopy" style="font-size: 18px; background-color: var(--The-darkest);">
+                Copy
+              </button>
+              <br>
+              <textarea id="sentence" class="form-control mx-auto mt-3" rows="5" id="comment" placeholder="translate:"
+                name="text" style="background-color: var(--medium);"></textarea>
+            </div>
+          </div>
+          <!-- /card3 -->
+
+    </section> <!-- /cards -->
+    <!-- <hr class="my-4"> -->
+    <div class="fixed-img fixed-image1"></div>
+    <!-- tours -->
+    <section class="tours">
+      <div class="mx-auto mb-3 p-3 text-center text-shadow rounded-3 shadow-lg "
+        style="background-color:var(--The-darkest);">
+        <h1 class="title" style="font-size: 40px;">Popular destinations in Saudi Arabia</h1>
+      </div>
+      <div class="container-fluid">
+        <div class="row justify-content-around pb-5 ">
+          <!-- santa maria cathedral card -->
+          <div class="card card_overlay col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow" style="background-color: var(--medium);color: var(--The-darkest);">
+            <input type="image" src="images/Saudi Arabia/-في-السعودية-2-e1551048141881.webp" class="card-img-top shadow w-100" alt=" santa maria cathedral">
+            <div class="card-body">
+              <h5 class="card-title">makka el kukarama</h5>
+              <p class="card-text">The city of Makkah lays at the bottom of the Hejaz Mountains on the Tihamah plain that runs on the western side of Saudi Arabia along the Red Sea.</p>
+              <a href="#" target="_blank"><button 
+                class="btn text-light   mx-auto d-block" style="background-color: var(--The-darkest);">Know More</button>
+              </a>
+            </div>
+          </div>
+          <!-- /santa maria cathedral -->
+          <!-- Camp nou Stadium card -->
+          <div class="card card_overlay  col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow" style="background-color: var(--medium);color: var(--The-darkest);">
+            <input type="image" src="images/Saudi Arabia/181916-2-وادي-لجب-الريث.jpg" class="card-img-top shadow" alt=" Camp nou Stadium">
+            <div class="card-body">
+              <h5 class="card-title">Wadi Lajab</h5>
+              <p class="card-text">Wadi Lajab is a rocky crevice penetrated by torrential waters. It has made its way due to sculpting factors. The valley is located in Al-Reith Governorate in the Jazan region, southwest of the Kingdom. It follows the famous Tihama Valleys and Al-Reith Mountains. It is the official park for residents of the region and visitors from inside and outside the Kingdom.</p>
+              <a href="#" target="_blank"><button
+                class="btn text-light mx-auto d-block" style="background-color: var(--The-darkest);">Know More</button>
+              </a>
+            </div>
+          </div>
+          <!-- /Camp nou Stadium card -->
+          <!-- Güell Park card -->
+          <div class="card card_overlay  col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow" style="background-color: var(--medium);color: var(--The-darkest);">
+            <input type="image" src="images/Saudi Arabia/img1.webp" class="card-img-top shadow" alt=" Güell Park">
+            <div class="card-body">
+              <h5 class="card-title">khalifa tower</h5>
+              <p class="card-text">it is the talest tower in the world </p>
+              <a href="#" target="_blank"><button
+                class="btn text-light mx-auto d-block" style="background-color: var(--The-darkest);">Know More</button>
+              </a>
+            </div>
+          </div>
+          <!-- /Güell Park card -->
+          <!-- La Rambla Street card -->
+          <div class="card card_overlay  col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow" style="background-color: var(--medium);color: var(--The-darkest);">
+            <input type="image" src="images/Saudi Arabia/تعبير-عن-السياحة-في-السعودية-بالانجليزي.jpg" class="card-img-top shadow" alt=" La Rambla Street">
+            <div class="card-body">
+              <h5 class="card-title">tourists Street</h5>
+              <p class="card-text">is considered the most well known street in central Saudi Arabia. A tree-lined pedestrian street, it stretches
+              for 1.2 kilometres connecting the Plaça de Catalunya in its center with the Christopher Columbus Monument at Port Vell.</p>
+              <a href="#" target="_blank"><button
+                class="btn text-light mx-auto d-block" style="background-color: var(--The-darkest);">Know More<button>
+              </a>
+            </div>
+          </div>
+          <!-- /La Rambla Street card -->
+          <!-- Montjuïc Palace  card -->
+          <div class="card card_overlay  col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow" style="background-color: var(--medium);color: var(--The-darkest);">
+            <input type="image" src="images/Saudi Arabia/rjl_lm_fy_syr.jpg" class="card-img-top shadow" alt=" Montjuïc Palace">
+            <div class="card-body">
+              <h5 class="card-title">Rijal Almaa</h5>
+              <p class="card-text">Rijal Almaa, a mountainous governorate, promises its visitors stunning views, as it is like a green carpet. The governorate's areas are interspersed with water streams and valley bottoms that have turned into springs flowing with fresh water. There are also many green spaces in the region between the Qais, Madaraqa and Ghamra mountains, which are famous for their dense forests. </p>
+              <a href="#" target="_blank"><button
+                class="btn text-light mx-auto d-block" style="background-color: var(--The-darkest);">Know More</button>
+              </a>
+            </div>
+          </div>
+          <!-- /Montjuïc Palace card -->
+          <!-- Gaudi buildings card -->
+          <div class="card card_overlay  col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow" style="background-color: var(--medium);color: var(--The-darkest);">
+            <input type="image" src="images/Saudi Arabia/gb_rgdn_fy_lbh.jpg" class="card-img-top shadow" alt=" Gaudi buildings">
+            <div class="card-body">
+              <h5 class="card-title">raghdan forest</h5>
+              <p class="card-text">The forest is located on the highest mountain peak at the entrance to the city of Al-Baha. It is considered one of the most famous forests in the Arab world. It is known for its dense trees and wide green areas in its parts. It represents one of the most beautiful tourist attractions in Saudi Arabia, especially for lovers of recreational outings. The place is equipped to receive families, in addition to the presence of tents. Outdoor dining amidst the dense, very green forests. The forest hosts an interesting small seasonal zoo.</p>
+              <a href="#" target="_blank"><button
+                class="btn text-light mx-auto d-block" style="background-color: var(--The-darkest);">Know More<button>
+              </a>
+            </div>
+          </div>
+          <!-- /Gaudi buildings card -->
+        </div> <!-- /row cards -->
+      </div> <!-- /container -->
+    </section>
+
+    <div class="fixed-img fixed-image2"></div>
+    
+    <!-- thanks -->
+    <!-- <div class="card p-3 shadow-lg" style="background-color: var(--The-darkest); color: var(--light);">
+      <h2 class="text-center text-light m-3 title" style="font-size: 40px;">Thanks</h2>
+    </div> -->
+    <!-- /thanks -->
+
+    <br class="my-4">
+    <!-- postcards news -->
+    <section class="container light"> 
+      <div class="container py-2">
+        <div class="h1 text-center  " id="pageHeaderTitle" style="font-size: 30px; color: var(--light); background-color: var(--The-darkest); padding: 10px;">morocco NEWS</div>
+
+        <article class="postcard d-flex light blue"> <!-- 1st card -->
+          <a class="postcard__img_link" href="#">
+            <img class="postcard__img" src="images/morocco/1657829717.jpg" alt="Image Title" />
+          </a>
+          <div class="postcard__text t-dark">
+            <h1 class="postcard__title"><a href="#">morocco down town</a></h1>
+            <div class="postcard__subtitle small">
+              <time datetime="2023-11-17 12:00:00">
+                <i class="fas fa-calendar-alt mr-2"></i>, fri 17th 2023
+              </time>
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">Survivors struggling to find shelter and supplies have voiced criticism of what they have described as an initially slow government response.
+
+                Morocco has deployed the army and has said it is reinforcing search-and-rescue teams, providing drinking water and distributing food, tents and blankets.</div>
+            <ul class="postcard__tagbox">
+              <li class="tag__item"><i class="fas fa-tag mr-2"></i> Podcast</li>
+              <li class="tag__item"><i class="fas fa-clock mr-2"></i> 55 mins.</li>
+              <li class="tag__item play ">
+                <a href="#"><i class="fas fa-play mr-2"></i> Play Episode</a>
+              </li>
+            </ul>
+          </div>
+        </article> <!-- /1st card -->
+        <article class="postcard d-flex light red"> <!-- 2nd card -->
+          <a class="postcard__img_link" href="#">
+            <img class="postcard__img" src="images/morocco/1659524787.jpg" alt="Image Title" />
+          </a>
+          <div class="postcard__text t-dark">
+            <h1 class="postcard__title red"><a href="#">Damage to 12th-century mosque</a></h1>
+            <div class="postcard__subtitle small">
+              <time datetime="2023-11-17 12:00:00">
+                <i class="fas fa-calendar-alt mr-2"></i>, fri 17th 2023
+              </time>
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">The harm done to Morocco's cultural heritage has been emerging gradually. Buildings in Marrakech old city, a United Nations World Heritage Site, were damaged. The quake also reportedly did major damage to the historically significant 12th-century Tinmel Mosque in a remote mountain area closer to the epicentre.</div>
+            <ul class="postcard__tagbox">
+              <li class="tag__item"><i class="fas fa-tag mr-2"></i> Podcast</li>
+              <li class="tag__item"><i class="fas fa-clock mr-2"></i> 55 mins.</li>
+              <li class="tag__item play red">
+                <a href="#"><i class="fas fa-play mr-2"></i> Play Episode</a>
+              </li>
+            </ul>
+          </div>
+        </article> <!-- /2nd card -->
+        <article class="postcard d-flex  light green"> <!-- 3rd card -->
+          <a class="postcard__img_link" href="#">
+            <img class="postcard__img" src="images/morocco/Lionel-Messi-Diego-Maradona-CC-4.0.-2.jpg" alt="Image Title" />
+          </a>
+          <div class="postcard__text t-dark">
+            <h1 class="postcard__title green"><a href="#">lionel messi to morocco</a></h1>
+            <div class="postcard__subtitle small">
+              <time datetime="2023-11-17 12:00:00">
+                <i class="fas fa-calendar-alt mr-2"></i>, fri 17th 2023
+              </time>
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">For the man who most people are happy enough to designate as the greatest to ever play the sport, the 2022 World Cup was a crowning achievement on the most legendary of careers.</div>
+            <ul class="postcard__tagbox">
+              <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+              <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+              <li class="tag__item play green">
+                <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+              </li>
+            </ul>
+          </div>
+        </article> <!-- /3rd card -->
+        <article class="postcard d-flex light yellow "> <!-- 4th card -->
+          <a class="postcard__img_link" href="#">
+            <img class="postcard__img" src="images/morocco/12Morocco-Tourists-czvp-superJumbo.webp" alt="Image Title" />
+          </a>
+          <div class="postcard__text t-dark">
+            <h1 class="postcard__title yellow"><a href="#">Moulay Brahim</a></h1>
+            <div class="postcard__subtitle small">
+              <time datetime="2023-11-17 12:00:00">
+                <i class="fas fa-calendar-alt mr-2"></i>, fri 17th 2023
+              </time>
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">A damaged hotel in the town of Moulay Brahim, about 45 miles south of Marrakesh. A 6.8-magnitude earthquake struck the area on Friday.Credit...Tiago Petinga/EPA, via Shutterstock</div>
+            <ul class="postcard__tagbox">
+              <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+              <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+              <li class="tag__item play yellow">
+                <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+              </li>
+            </ul>
+          </div>
+        </article> <!-- /4th card -->
+      </div> <!-- /container -->
+    </section> <!-- /postcard section -->
+    <!-- join us -->
+    <h2 class="text-center " style="font-size: 30px; color: var(--light);background-color: var(--The-darkest); padding: 20px;">Join Us</h2>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="card m-3 " style="width: 250px; box-shadow: -5px -5px 20px 10px rgb(201, 198, 241); background-color: var(--medium);">
+          <div class="card-body  d-flex flex-column text-center">
+            <h3 class="card-title mb-4">Subscribe Now
+            </h3>
+            <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="images/twetter.jpg" type="image"
+              alt="icon">
+            <a href="#" target="_blank" class="card-link h4 text-dark" ">Go to link</a>
+          </div>
+        </div>
+        <div class="card m-3  " style="width: 250px; box-shadow: -5px -5px 20px 10px rgb(201, 198, 241); background-color: var(--medium);">
+          <div class="card-body  d-flex flex-column text-center">
+            <h3 class="card-title mb-4">Follow
+            </h3>
+            <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="images/tectok.jpg" type="image"
+              alt="icon">
+            <a href="" target="_blank" class="card-link h4 text-dark ">Go to link</a>
+          </div>
+        </div>
+        <div class="card m-3  " style="width: 250px;  box-shadow: -5px -5px 20px 10px rgb(201, 198, 241); background-color: var(--medium);">
+          <div class="card-body d-flex flex-column text-center">
+            <h3 class="card-title mb-4">Like the page
+            </h3>
+            <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="images/in.jpg" type="image"
+              alt="icon">
+            <a href="" target="_blank" class="card-link h4 text-dark ">Go to link</a>
+          </div>
+        </div>
+        <div class="card m-3  " style="width: 250px; box-shadow: -5px -5px 20px 10px rgb(201, 198, 241); background-color: var(--medium);">
+          <div class="card-body  d-flex flex-column text-center">
+            <h3 class="card-title mb-4">watch vedios
+            </h3>
+            <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="images/insta.jpg" type="image"
+              alt="icon">
+            <a href="" target="_blank" class="card-link h4 text-dark ">Go to link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /join us -->
+    <!-- footer -->
+    <footer class=" pb-5 " style="background-color: var(--The-darkest); color: var(--light);">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <hr class=" border-top border-3 border-light my-3">
+            <h5><img src="images/logo1.png" alt="good pic" class="logoicon rounded-circle">&nbsp; call us</h5>
+            <hr class="border-top border-3 border-light my-3">
+            <address>
+              <p>Tel : 000-000-000</p>
+              <p>Address : EGYPT</p>
+              <p>Fax : 000-000-000</p>
+            </address>
+          </div>
+          <div class="col-md-4">
+            <hr class="border-top border-3 border-light my-3">
+            <h5><img src="images/logo1.png" alt="good pic" class="logoicon rounded-circle ">&nbsp; Important links</h5>
+            <hr class="border-top border-3 border-light my-3">
+            <p><a href="#">Visit Us</a></p>
+            <p><a href="#">Take alook</a></p>
+            <p><a href="#">Your health is more important</a></p>
+          </div>
+          <div class="col-md-4">
+            <hr class="border-top border-3 border-light my-3">
+            <h5><img src="images/logo1.png" alt="good pic" class="logoicon rounded-circle">&nbsp; Vision</h5>
+            <hr class="border-top border-3 border-light my-3">
+            <p>Serveices for all </p>
+            <p>Provide best serveices</p>
+            <p>you will be better than before</p>
+          </div>
+        </div>
+      </div>
+      <hr class="border-top border-3 border-light my-3">
+      <span class="text-center d-block title">Copyright &copy; 2023 Gerges farag, arabians. All
+        rights</span>
+      <!-- <hr class="border-top border-3 border-light my-3"> -->
+      <!-- /footer -->
+      <!-- js -->
+    <!-- Latest compiled JavaScript -->
+<script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+        </script>
+        <script type-text="javascript">
+          function copyToClipboard(id) {
+                  var from = document.getElementById(id);
+                  var range = document.createRange();
+                  window.getSelection().removeAllRanges();
+                  range.selectNode(from);
+                  window.getSelection().addRange(range);
+                  document.execCommand('copy');
+                  window.getSelection().removeAllRanges();
+                  window.alert("تم نسخ النص.");
+           }
+          </script>
+          
+    </body>
+  </html>
+  
